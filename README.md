@@ -9,7 +9,6 @@ An Ember (frontend) &amp; Rails (backend) Application with the TDD Process.
   * node v0.12.2
   * npm 2.7.4
   * ember-cli 0.2.3
-  * ember-cli-pretender 0.1.0
 
 ## Usage
 Clone this repository
