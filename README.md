@@ -1,6 +1,8 @@
 # ember-rails-tdd
 An Ember (frontend) &amp; Rails (backend) Application with the TDD Process.
 
+This project is based on this [work](http://reefpoints.dockyard.com/2014/05/07/building-an-ember-app-with-rails-part-1.html).
+
 ## Prerequisites
  * **Backend**
   * ruby 2.2.1p85
