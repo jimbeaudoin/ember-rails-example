@@ -36,7 +36,7 @@ You can now visit http://localhost:4200
 ## Tests
 To see your tests visit http://localhost:4200/tests
 
-## Documentations
+## [WIP] Documentations
 https://github.com/jimbeaudoin/ember-rails-tdd-docs
 
 --
