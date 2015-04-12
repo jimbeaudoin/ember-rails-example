@@ -11,6 +11,31 @@ An Ember (frontend) &amp; Rails (backend) Application with the TDD Process.
   * ember-cli 0.2.3
   * ember-cli-pretender 0.1.0
 
+## Usage
+Clone this repository
+```sh
+git clone https://github.com/jimbeaudoin/ember-rails-tdd.git
+```
+Backend Preparation
+```sh
+cd backend
+bundle install
+rake db:migrate
+rake db:seed
+rails s
+```
+Frontend Preparation
+```sh
+cd frontend
+npm install
+bower install
+ember s --proxy http://localhost:3000
+```
+You can now visit http://localhost:4200
+
+## Tests
+To see your tests visit http://localhost:4200/tests
+
 ## Documentations
 https://github.com/jimbeaudoin/ember-rails-tdd-docs
 
