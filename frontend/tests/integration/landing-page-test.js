@@ -13,7 +13,7 @@ module('Integration - Landing Page', {
   }
 });
 
-test('Should welcome me to Boston Ember', function(assert) {
+test('Should welcome me to Ember Frontend', function(assert) {
   visit('/').then(function() {
     assert.equal(find('h2#title').text(), 'Welcome to Ember Frontend');
   });
