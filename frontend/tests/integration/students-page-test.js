@@ -61,3 +61,11 @@ test('Should list all students', function(assert) {
     assert.equal(find('a:contains("Marie-Claude")').length, 1);
   });
 });
+
+test('Should be able to navigate to a student page', function(assert) {
+  visit('/students').then(function() {
+    click('a:contains("Melissa")').then(function() {
+      assert.equal(find('h4').text(), 'Melissa');
+    });
+  });
+});
