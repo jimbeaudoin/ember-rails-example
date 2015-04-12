@@ -11,7 +11,7 @@ module('Integration - Student Page', {
     var students = [
       {
         id: 1,
-        name: 'Melissa'
+        name: 'Mélissa'
       },
       {
         id: 2,
@@ -56,7 +56,7 @@ test('Should allow navigation to the students page from the landing page', funct
 
 test('Should list all students', function(assert) {
   visit('/students').then(function() {
-    assert.equal(find('a:contains("Melissa")').length, 1);
+    assert.equal(find('a:contains("Mélissa")').length, 1);
     assert.equal(find('a:contains("Sophie")').length, 1);
     assert.equal(find('a:contains("Marie-Claude")').length, 1);
   });
@@ -64,14 +64,14 @@ test('Should list all students', function(assert) {
 
 test('Should be able to navigate to a student page', function(assert) {
   visit('/students').then(function() {
-    click('a:contains("Melissa")').then(function() {
-      assert.equal(find('h4').text(), 'Melissa');
+    click('a:contains("Mélissa")').then(function() {
+      assert.equal(find('h4').text(), 'Mélissa');
     });
   });
 });
 
 test('Should be able visit a student page', function(assert) {
   visit('/students/1').then(function() {
-    assert.equal(find('h4').text(), 'Melissa');
+    assert.equal(find('h4').text(), 'Mélissa');
   });
 });
