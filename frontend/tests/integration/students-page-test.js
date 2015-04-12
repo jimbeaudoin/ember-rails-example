@@ -69,3 +69,9 @@ test('Should be able to navigate to a student page', function(assert) {
     });
   });
 });
+
+test('Should be able visit a student page', function(assert) {
+  visit('/students/1').then(function() {
+    assert.equal(find('h4').text(), 'Melissa');
+  });
+});
