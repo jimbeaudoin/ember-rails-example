@@ -53,3 +53,11 @@ test('Should allow navigation to the students page from the landing page', funct
     });
   });
 });
+
+test('Should list all students', function(assert) {
+  visit('/students').then(function() {
+    assert.equal(find('a:contains("Melissa")').length, 1);
+    assert.equal(find('a:contains("Sophie")').length, 1);
+    assert.equal(find('a:contains("Marie-Claude")').length, 1);
+  });
+});
