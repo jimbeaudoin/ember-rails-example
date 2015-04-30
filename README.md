@@ -1,4 +1,4 @@
-# ember-rails-tdd
+# ember-rails
 A Basic Ember (frontend) &amp; Rails (backend) Application.
 
 This project is based on this [work](http://reefpoints.dockyard.com/2014/05/07/building-an-ember-app-with-rails-part-1.html).
